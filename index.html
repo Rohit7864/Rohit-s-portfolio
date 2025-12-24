@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rohit Kumar | Creative Designer & Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.0/build/spline-viewer.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="video-background">
+    <video autoplay muted loop playsinline id="bg-video">
+        <source src="pain-dark-realm.3840x2160.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="video-overlay"></div>
+</div>
+    <nav class="navbar">
+        <div class="logo">ROHIT<span>.DESIGN</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+            <button id="theme-toggle" class="theme-btn">
+                <i class="fas fa-moon"></i>
+            </button>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h3>Hello, I'm</h3>
+            <h1>Rohit Kumar</h1>
+            <p class="role-text">Web Designer <span class="divider">|</span> Graphic Designer <span class="divider">|</span> UI/UX</p>
+            <p class="summary">
+                Passionate about designing user-friendly websites and impactful graphics. 
+                Merging code with creativity to build immersive digital experiences.
+            </p>
+            <div class="cta-group">
+                <a href="#projects" class="btn primary-btn">View Work</a>
+                <a href="#contact" class="btn secondary-btn">Hire Me</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="anime-container">
+                <div class="anime-card">
+                    <img src="profile.png" alt="Creative Anime Aesthetic" class="anime-img">
+                    <div class="floating-elements">
+                        <i class="fab fa-react float-icon"></i>
+                        <i class="fab fa-figma float-icon"></i>
+                        <i class="fas fa-code float-icon"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <h2 class="section-title">Experience & Education</h2>
+        <div class="timeline-container">
+            <div class="timeline-card left">
+                <div class="content">
+                    <h3>Graphic Designer</h3>
+                    <h4>Premium Strategies Marketing Management Pvt Ltd</h4>
+                    <span class="date">Mar 2025 - Dec 2025</span>
+                    <p>Creative Graphic Designer with experience in branding, social media creatives, and marketing visuals. Skilled in Adobe Photoshop, Illustrator, Figma, and Canva, delivering visually impactful and brand-consistent designs.</p>
+                </div>
+            </div>
+            <div class="timeline-card right">
+                <div class="content">
+                    <h3>B.Tech - Computer Science</h3>
+                    <h4>AP Goyal Shimla University</h4>
+                    <span class="date">Graduated 2025</span>
+                    <p>specialized in Computer Science & Engineering. Built a strong foundation in programming and design principles.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <h2 class="section-title">Tech & Tools</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3>Development</h3>
+                <div class="tags">
+                    <span class="skill-tag html"><i class="fab fa-html5"></i> HTML5</span>
+                    <span class="skill-tag css"><i class="fab fa-css3-alt"></i> CSS3</span>
+                    <span class="skill-tag js"><i class="fab fa-js"></i> JavaScript</span>
+                    <span class="skill-tag react"><i class="fab fa-react"></i> React.js</span>
+                    <span class="skill-tag node"><i class="fab fa-node"></i> Node.js</span>
+                    <span class="skill-tag python"><i class="fab fa-python"></i> Python</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Design & UI/UX</h3>
+                <div class="tags">
+                    <span class="skill-tag figma"><i class="fab fa-figma"></i> Figma</span>
+                    <span class="skill-tag ps"><i class="fas fa-image"></i> Photoshop</span>
+                    <span class="skill-tag ai"><i class="fas fa-pen-nib"></i> Illustrator</span>
+                    <span class="skill-tag xd"><i class="fab fa-adn"></i> Adobe XD</span>
+                    <span class="skill-tag blender"><i class="fas fa-cube"></i> Blender 3D</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <h2 class="section-title">My Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card" onclick="window.open('#', '_blank')">
+                <div class="project-img">
+                    <div class="overlay">
+                        <i class="fas fa-external-link-alt"></i>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Web Design Project">
+                </div>
+                <div class="project-info">
+                    <h3>Modern Portfolio UI</h3>
+                    <p>A responsive portfolio design using HTML, CSS, and GSAP animations.</p>
+                    <div class="tech-stack">
+                        <span>HTML</span><span>CSS</span><span>JS</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" onclick="window.open('#', '_blank')">
+                <div class="project-img">
+                    <div class="overlay">
+                        <i class="fas fa-external-link-alt"></i>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Dashboard Project">
+                </div>
+                <div class="project-info">
+                    <h3>React Analytics Dashboard</h3>
+                    <p>Data visualization dashboard with dark mode and real-time charts.</p>
+                    <div class="tech-stack">
+                        <span>React</span><span>Node</span><span>MongoDB</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" onclick="window.open('#', '_blank')">
+                <div class="project-img">
+                    <div class="overlay">
+                        <i class="fas fa-external-link-alt"></i>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="3D Design">
+                </div>
+                <div class="project-info">
+                    <h3>3D Brand Assets</h3>
+                    <p>3D rendered assets using Blender for a fintech startup campaign.</p>
+                    <div class="tech-stack">
+                        <span>Blender</span><span>Photoshop</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+        <h2 class="section-title">Contact Me</h2>
+        <div class="contact-container">
+            <div class="social-connect">
+                <h3>Let's Connect</h3>
+                <div class="social-icons">
+                    <a href="https://wa.me/919813509519" target="_blank" class="social-btn whatsapp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/rohiitt._.21" target="_blank" class="social-btn instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://linkedin.com/rohit.badgaria" target="_blank" class="social-btn linkedin"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.behance.net/rohitbadgaria" target="_blank" class="social-btn behance"><i class="fab fa-behance"></i></a>
+                    <a href="https://facebook.com/rohitbadgaria" target="_blank" class="social-btn facebook"><i class="fab fa-facebook-f"></i></a>
+                </div>
+                <p class="address"><i class="fas fa-map-marker-alt"></i> Sec. 51 Noida (U.P) 201301</p>
+                <p class="email"><i class="fas fa-envelope"></i> Rohitbadgaria2003@gmail.com</p>
+            </div>
+
+            <form id="whatsappForm" class="contact-form">
+                <h3>Send a Message</h3>
+                <div class="input-group">
+                    <input type="text" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="input-group">
+                    <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn submit-btn">Send on WhatsApp <i class="fab fa-whatsapp"></i></button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Rohit Kumar. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
