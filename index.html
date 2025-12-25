@@ -9,7 +9,56 @@
     <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.0/build/spline-viewer.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+
+  <!-- INTRO VIDEO SCREEN -->
+  <div id="intro">
+    <video autoplay muted loop playsinline id="introVideo">
+      <source src="pain-dark-realm.3840x2160.mp4" type="video/mp4" />
+    </video>
+
+    <div class="intro-overlay">
+<div class="smile-btn-wrapper">
+  <svg id="enterBtn" width="300" height="140" viewBox="0 0 300 140">
+
+    <!-- GROUP = SMILE + TEXT MOVE TOGETHER -->
+    <g id="smileGroup">
+
+      <!-- Smile Path -->
+      <path
+        id="smilePath"
+        d="M30 50 Q150 120 270 50"
+        fill="none"
+        stroke="#b26bff"
+        stroke-width="19"
+        stroke-linecap="round"
+      />
+
+      <!-- Curved Text ON the smile -->
+      <text>
+        <textPath
+          href="#smilePath"
+          startOffset="50%"
+          text-anchor="middle"
+          class="smile-text">
+          ENTER PORTFOLIO
+        </textPath>
+      </text>
+
+    </g>
+  </svg>
+</div>
+    </div>
+  </div>
+
+  <!-- MAIN WEBSITE -->
+  <div id="main-content">
+    <!-- 🔥 YOUR EXISTING WEBSITE CODE GOES HERE 🔥 -->
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
 
 <div class="video-background">
     <video autoplay muted loop playsinline id="bg-video">

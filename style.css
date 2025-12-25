@@ -1,3 +1,153 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* INTRO SCREEN */
+#intro {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 9999;
+  overflow: hidden;
+}
+
+/* VIDEO */
+#intro video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* OVERLAY */
+.intro-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.356);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  backdrop-filter: blur(2px);
+}
+
+.intro-overlay h1 {
+  font-size: 3rem;
+  letter-spacing: 2px;
+}
+
+.intro-overlay p {
+  margin: 15px 0;
+  opacity: 0.9;
+}
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+/* POSITION */
+.smile-btn-wrapper {
+  margin-top: 190px;
+  display: flex;
+  justify-content: center;
+}
+
+/* WHOLE BUTTON */
+#enterBtn {
+  cursor: pointer;
+  animation: eyeGlow 12s infinite ease-in-out;
+}
+
+/* GROUP ANIMATION TARGET */
+#smileGroup {
+  transform-origin: center;
+  transition: transform 0.4s ease;
+}
+
+/* TEXT STYLE */
+.smile-text {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 24px;
+  letter-spacing: 2px;
+  fill: #000000;
+  text-shadow:
+    0 0 6px #000000ba(222, 214, 231, 0.9),
+    0 0 12px #000000ba(224, 216, 231, 0.7);
+}
+
+/* GLOW PULSE (EYES MATCH) */
+@keyframes eyeGlow {
+  0% {
+    filter: drop-shadow(0 0 4px rgba(178,107,255,0.3));
+    opacity: 0.55;
+  }
+  50% {
+    filter:
+      drop-shadow(0 0 8px rgba(178,107,255,1))
+      drop-shadow(0 0 10px rgba(178,107,255,0.9));
+    opacity: 0.50;
+  }
+  100% {
+    filter: drop-shadow(0 0 4px rgba(178,107,255,0.3));
+    opacity: 0.75;
+  }
+}
+
+/* HOVER = SMILE + TEXT MOVE TOGETHER */
+#enterBtn:hover #smileGroup {
+  transform: translateY(6px) scale(1.05);
+}
+
+/* DEEPER SMILE ON HOVER */
+#enterBtn:hover #smilePath {
+  d: path("M30 40 Q150 140 270 40");
+  stroke-width: 16;
+}
+
+/* CLICK */
+#enterBtn:active #smileGroup {
+  transform: scale(1.12);
+}
+
+
+
+.intro-overlay button:hover {
+  transform: scale(1.05);
+}
+
+
+/* MAIN CONTENT */
+#main-content {
+  display: none;
+  animation: fadeIn 1.2s ease forwards;
+}
+
+/* EXIT ANIMATION */
+#intro.fade-out {
+  animation: fadeOut 1s ease forwards;
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    transform: scale(1.1);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* --- Variables & Reset --- */
 :root {
     --bg-color: #0a0a0a;

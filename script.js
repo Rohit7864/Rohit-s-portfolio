@@ -1,3 +1,16 @@
+const intro = document.getElementById("intro");
+const enterBtn = document.getElementById("enterBtn");
+const mainContent = document.getElementById("main-content");
+
+enterBtn.addEventListener("click", () => {
+  intro.classList.add("fade-out");
+
+  setTimeout(() => {
+    intro.style.display = "none";
+    mainContent.style.display = "block";
+  }, 1000);
+});
+
 document.addEventListener('DOMContentLoaded', () => {
     
     // --- Dark/Light Mode Toggle ---
